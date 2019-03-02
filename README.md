@@ -29,6 +29,8 @@ Please build an app displaying the 5 day weather forecast for a location of your
 <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_1.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_2.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_3.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_4.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_5.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_6.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_6.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_7.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_8.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_9.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_10.PNG" height="200"/>
  
 
+### Test envirnment
+This code has been tested on iPhone 6s 16GB.
 
 ### Future Improvements
 1. Fetching such a large chunk of data of cities takes time, So we can use some API to fetch the cities search result.

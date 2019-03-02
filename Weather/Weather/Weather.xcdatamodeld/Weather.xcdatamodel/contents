@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1.0.0">
+    <entity name="CityEntity" representedClassName="CityEntity" syncable="YES">
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastUpdateTimestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="forecasts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ForecastEntity" inverseName="city" inverseEntity="ForecastEntity" syncable="YES"/>
+    </entity>
+    <entity name="CloudEntity" representedClassName="CloudEntity" syncable="YES">
+        <attribute name="cloudiness" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="forecast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ForecastEntity" inverseName="cloud" inverseEntity="ForecastEntity" syncable="YES"/>
+    </entity>
+    <entity name="ForecastEntity" representedClassName="ForecastEntity" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="groundLevel" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="maximumTemperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="minimumTemperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="seaLevel" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CityEntity" inverseName="forecasts" inverseEntity="CityEntity" syncable="YES"/>
+        <relationship name="cloud" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CloudEntity" inverseName="forecast" inverseEntity="CloudEntity" syncable="YES"/>
+        <relationship name="rain" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RainEntity" inverseName="forecast" inverseEntity="RainEntity" syncable="YES"/>
+        <relationship name="snow" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SnowEntity" inverseName="forecast" inverseEntity="SnowEntity" syncable="YES"/>
+        <relationship name="weather" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WeatherEntity" inverseName="forecast" inverseEntity="WeatherEntity" syncable="YES"/>
+        <relationship name="wind" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="WindEntity" inverseName="forecast" inverseEntity="WindEntity" syncable="YES"/>
+    </entity>
+    <entity name="RainEntity" representedClassName="RainEntity" syncable="YES">
+        <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="forecast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ForecastEntity" inverseName="rain" inverseEntity="ForecastEntity" syncable="YES"/>
+    </entity>
+    <entity name="SnowEntity" representedClassName="SnowEntity" syncable="YES">
+        <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="forecast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ForecastEntity" inverseName="snow" inverseEntity="ForecastEntity" syncable="YES"/>
+    </entity>
+    <entity name="WeatherEntity" representedClassName="WeatherEntity" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="main" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="forecast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ForecastEntity" inverseName="weather" inverseEntity="ForecastEntity" syncable="YES"/>
+    </entity>
+    <entity name="WindEntity" representedClassName="WindEntity" syncable="YES">
+        <attribute name="degree" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="forecast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ForecastEntity" inverseName="wind" inverseEntity="ForecastEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CityEntity" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="CloudEntity" positionX="-45" positionY="54" width="128" height="75"/>
+        <element name="ForecastEntity" positionX="-54" positionY="-9" width="128" height="255"/>
+        <element name="RainEntity" positionX="-18" positionY="72" width="128" height="75"/>
+        <element name="SnowEntity" positionX="0" positionY="81" width="128" height="75"/>
+        <element name="WeatherEntity" positionX="-54" positionY="45" width="128" height="120"/>
+        <element name="WindEntity" positionX="-36" positionY="63" width="128" height="90"/>
+    </elements>
+</model>

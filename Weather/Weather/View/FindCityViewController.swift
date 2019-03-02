@@ -41,6 +41,8 @@ class FindCityViewController: SuperViewController {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "Enter City name or country"
+        searchController.searchBar.tintColor = UIColor.white
+        searchController.searchBar.barTintColor = UIColor.white
         searchController.searchResultsUpdater = self
         self.navigationItem.searchController = searchController
         self.definesPresentationContext = true

@@ -10,7 +10,7 @@ Please build an app displaying the 5 day weather forecast for a location of your
 
 
 ### App architecture
-<img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/Architecture.png" width="600"/>
+<img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/Architecture.png"/>
 
 
 ### Features implemented
@@ -26,7 +26,7 @@ Please build an app displaying the 5 day weather forecast for a location of your
 
 
 ### App screenshots -
-<img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_1590.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_1592.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_1593.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_1594.PNG" width="200"/>
+<img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_1.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_2.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_3.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_4.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_5.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_6.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_6.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_7.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_8.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_9.PNG" width="200"/>    <img src = "https://github.com/siddharth-paneri/BuildIt-Assignment-iOS/blob/master/Images/IMG_10.PNG" height="200"/>
  
 
 
